@@ -13,15 +13,15 @@ body {
     text-align: center;
   }
 
-/* Ẩn menu nav-links và nav-right trên màn hình nhỏ */
+/* Ẩn menu nav-links trên màn hình nhỏ */
 @media screen and (max-width: 768px) {
-  .nav-links, .nav-right {
+  .nav-links {
     display: none;
   }
 
   /* Khi nav có class active thì hiện menu */
-  nav.main-nav.active .nav-links,
-  nav.main-nav.active .nav-right {
+  nav.main-nav.active .nav-links
+ {
     display: flex;
     flex-direction: column;
     background-color: #fff;
