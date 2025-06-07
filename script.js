@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Tạo nút hamburger
   const toggleBtn = document.createElement('button');
 toggleBtn.id = 'toggle-menu';
-toggleBtn.innerHTML = '<i class="bi bi-list" style="font-size: 24px;"></i>';
+toggleBtn.innerHTML = '<span class="custom-icon"></span>';
 toggleBtn.style.background = 'none';
 toggleBtn.style.border = 'none';
 toggleBtn.style.cursor = 'pointer';
