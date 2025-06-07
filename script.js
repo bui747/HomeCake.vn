@@ -136,5 +136,24 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// Ẩn hiện menu
+document.addEventListener('DOMContentLoaded', function() {
+  const nav = document.querySelector('nav.main-nav');
+
+  // Tạo nút hamburger
+  const toggleBtn = document.createElement('div');
+  toggleBtn.classList.add('menu-toggle');
+  toggleBtn.innerHTML = '&#9776;'; // icon hamburger (☰)
+
+  // Chèn nút vào nav (ở vị trí đầu tiên hoặc cuối tùy bạn)
+  nav.insertBefore(toggleBtn, nav.firstChild);
+
+  // Bật/tắt class active để ẩn/hiện menu
+  toggleBtn.addEventListener('click', function() {
+    nav.classList.toggle('active');
+  });
+});
+
+
 
 
