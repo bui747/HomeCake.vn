@@ -141,11 +141,15 @@ document.addEventListener('DOMContentLoaded', function() {
   const nav = document.querySelector('nav.main-nav');
 
   // Tạo nút hamburger
-  const toggleBtn = document.createElement('div');
-  toggleBtn.classList.add('menu-toggle');
-  toggleBtn.innerHTML = '&#9776;'; // icon hamburger (☰)
+  const toggleBtn = document.createElement('button');
+toggleBtn.id = 'toggle-menu';
+toggleBtn.innerHTML = '<i class="bi bi-list" style="font-size: 24px;"></i>';
+toggleBtn.style.background = 'none';
+toggleBtn.style.border = 'none';
+toggleBtn.style.cursor = 'pointer';
+toggleBtn.style.padding = '0 10px';
 
-  // Chèn nút vào nav (ở vị trí đầu tiên hoặc cuối tùy bạn)
+  // Chèn nút vào nav
   nav.insertBefore(toggleBtn, nav.firstChild);
 
   // Bật/tắt class active để ẩn/hiện menu
