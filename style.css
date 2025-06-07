@@ -39,27 +39,51 @@ body {
   }
 }
 
-/* Nút hamburger mặc định ẩn */
-.menu-toggle {
+/* Ẩn nút toggle mặc định */
+#toggle-menu {
   display: none;
-  cursor: pointer;
-  font-size: 24px;
-  color: #6b0033;
-  user-select: none;
-  padding: 10px 20px;
 }
 
-/* Hiện nút hamburger trên mobile */
-@media screen and (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  .nav-left {
-    flex-grow: 1;
+/* Khi ở mobile (màn hình nhỏ hơn 768px) thì hiện nút hamburger */
+@media (max-width: 768px) {
+  #toggle-menu {
+    display: inline-block;
   }
 }
 
+/* Tạo icon hamburger thủ công */
+.custom-icon {
+  display: inline-block;
+  width: 24px;
+  height: 18px;
+  position: relative;
+}
+
+.custom-icon::before,
+.custom-icon::after,
+.custom-icon div {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.custom-icon::before {
+  top: 0;
+}
+
+.custom-icon::after {
+  bottom: 0;
+}
+
+.custom-icon div {
+  top: 50%;
+  transform: translateY(-50%);
+}
 
   .main-nav {
   position: sticky;
