@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Ẩn hiện menu
 document.addEventListener('DOMContentLoaded', function() {
-  const nav = document.querySelector('nav.main-nav');
+  const nav = document.querySelector('nav.nav-links');
 
   // Tạo nút hamburger
   const toggleBtn = document.createElement('button');
