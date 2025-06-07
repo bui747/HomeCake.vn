@@ -13,6 +13,54 @@ body {
     text-align: center;
   }
 
+/* Ẩn menu nav-links và nav-right trên màn hình nhỏ */
+@media screen and (max-width: 768px) {
+  .nav-links, .nav-right {
+    display: none;
+  }
+
+  /* Khi nav có class active thì hiện menu */
+  nav.main-nav.active .nav-links,
+  nav.main-nav.active .nav-right {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 60px; /* chiều cao nav */
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+
+  .nav-links a {
+    padding: 10px 20px;
+  }
+}
+
+/* Nút hamburger mặc định ẩn */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #6b0033;
+  user-select: none;
+  padding: 10px 20px;
+}
+
+/* Hiện nút hamburger trên mobile */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-left {
+    flex-grow: 1;
+  }
+}
+
+
   .main-nav {
   position: sticky;
   top: 0;
