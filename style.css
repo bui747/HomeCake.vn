@@ -106,12 +106,12 @@ body {
   }
 
 
-  /* NAVIGATION: xếp dạng lưới 2 cột */
-nav {
-  display: grid;
-  gap: 10px;
-  justify-items: center; /* căn giữa từng item */
-}
+/* NAVIGATION: xếp dọc thay vì ngang */
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
 
   nav a {
     padding: 8px 0;
