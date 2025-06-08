@@ -20,45 +20,6 @@ body {
   align-items: center;
 }
 
-/* Ẩn nút menu trên desktop */
-#toggle-menu {
-  display: none;
-}
-
-/* Responsive cho thiết bị nhỏ hơn 768px */
-@media (max-width: 768px) {
-  /* Hiện nút toggle */
-  #toggle-menu {
-    display: block;
-  }
-
-  /* Ẩn menu */
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background-color: #fff; /* hoặc màu khác tùy thiết kế */
-    position: absolute;
-    top: 60px; /* điều chỉnh theo chiều cao header */
-    right: 10px;
-    padding: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    border-radius: 8px;
-  }
-
-  /* Khi menu active thì hiện ra */
-  .nav-links.active {
-    display: flex;
-  }
-}
-
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
-
   .main-nav {
   position: sticky;
   top: 0;
