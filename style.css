@@ -52,6 +52,13 @@ body {
   }
 }
 
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
   .main-nav {
   position: sticky;
   top: 0;
