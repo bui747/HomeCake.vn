@@ -149,6 +149,7 @@ document.addEventListener('DOMContentLoaded', function() {
   toggleBtn.style.cursor = 'pointer';
   toggleBtn.style.fontSize = '24px'; // chỉnh kích thước icon nếu cần
   toggleBtn.style.marginRight = '10px';
+  toggleBtn.style.border = '1px solid red';
 
   // Chèn nút vào trước nav-links
   nav.parentNode.insertBefore(toggleBtn, nav);
