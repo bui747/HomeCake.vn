@@ -100,40 +100,68 @@ body {
 } 
 
 /* Responsive cho màn hình nhỏ (điện thoại) */
-@media screen and (max-width: 768px) {
-  .main-nav {
-    flex-wrap: wrap;
-    padding: 10px;
-  }
-
-  .nav-left {
-    flex: 1 1 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-  }
-
-  .nav-links {
-    flex: 1 1 100%;
-    justify-content: center;
+@media (max-width: 768px) {
+  /* TOP BAR: xếp dọc khi thu nhỏ màn hình */
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
     gap: 10px;
-    font-size: 12px;
-    flex-wrap: wrap;
-  }
-  .nav-right {
-    flex: 1 1 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    font-size: 12px;
+    font-size: 13px;
   }
 
-  .nav-right button#cart-icon {
+  .top-bar > div:first-child {
+    align-items: flex-start;
+  }
+
+  /* NAVIGATION: xếp dọc thay vì ngang */
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav a {
+    padding: 8px 0;
+    display: block;
+  }
+
+  /* DROPDOWN: hiện luôn để không cần hover trên mobile */
+  .dropdown-content {
+    position: static;
+    box-shadow: none;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    justify-content: center;
-    padding: 10px 0;
+    padding: 0;
+  }
+
+  .dropdown-content a {
+    padding: 10px;
+    color: #6b0033; /* đổi về màu dễ nhìn trên nền trắng */
+    border-top: 1px solid #fce4ec;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: none; /* tắt hover trên mobile */
+  }
+
+  .dropdown-content.show {
+    display: flex; /* nếu bạn có JS, có thể dùng toggle class show */
+  }
+
+  /* Đảm bảo header không bị tràn */
+  header {
+    font-size: 18px;
+  }
+
+  /* Nội dung */
+  .content {
+    padding: 15px;
+    font-size: 16px;
   }
 }
+
 
   /* form liên hệ */
   form {
