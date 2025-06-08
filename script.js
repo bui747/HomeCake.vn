@@ -137,15 +137,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // Ẩn hiện menu
-document.addEventListener('DOMContentLoaded', function() {
-  const toggleBtn = document.getElementById('toggle-menu');
-  const nav = document.querySelector('.nav-links');
-  const icon = document.getElementById('menu-icon');
+//document.addEventListener('DOMContentLoaded', function() {
+  //const toggleBtn = document.getElementById('toggle-menu');
+  //const nav = document.querySelector('.nav-links');
+  //const icon = document.getElementById('menu-icon');
 
-  toggleBtn.addEventListener('click', function() {
-    nav.classList.toggle('active');
-    icon.className = nav.classList.contains('active') ? 'bi bi-x' : 'bi bi-list';
-  });
-});
+  //toggleBtn.addEventListener('click', function() {
+    //nav.classList.toggle('active');
+    //icon.className = nav.classList.contains('active') ? 'bi bi-x' : 'bi bi-list';
+  //});
+//});
 
 
