@@ -103,12 +103,13 @@ body {
 @media (max-width: 768px) {
  
 
-  /* NAVIGATION: xếp dọc thay vì ngang */
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
+  /* NAVIGATION: xếp dạng lưới 2 cột */
+nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 cột bằng nhau */
+  gap: 10px;
+  justify-items: center; /* căn giữa từng item */
+}
 
   nav a {
     padding: 8px 0;
