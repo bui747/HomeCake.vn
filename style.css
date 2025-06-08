@@ -13,13 +13,6 @@ body {
     text-align: center;
   }
 
-/* Mặc định: hiện menu ngang cho desktop */
-.nav-links {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
   .main-nav {
   position: sticky;
   top: 0;
