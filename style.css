@@ -14,7 +14,7 @@ body {
   }
 
   .main-nav {
- /* position: sticky; */
+  position: sticky; 
   top: 0;
   z-index: 999;
   background-color: #fff; /* hoặc màu nền phù hợp với giao diện */
