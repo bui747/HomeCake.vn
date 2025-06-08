@@ -17,11 +17,11 @@ body {
   position: sticky; 
   top: 0;
   z-index: 999;
-  background-color: #fff; /* hoặc màu nền phù hợp với giao diện */
+  background-color: #fff; 
 }
 
   .top-bar {
-  background-color: #fde8ec; /* màu hồng nhạt dễ chịu */
+  background-color: #fde8ec;
   padding: 8px 20px;
   display: flex;
   justify-content: flex-end;
@@ -35,7 +35,7 @@ body {
 .top-bar > div:first-child {
   display: flex;
   flex-direction: column; /* xếp 2 dòng dọc */
-  gap: 6px; /* khoảng cách giữa 2 dòng */
+  gap: 6px; /* khoảng cách 2 dòng */
 }
 
 .top-bar span {
@@ -99,14 +99,14 @@ body {
   display: block;
 } 
 
-/* Responsive cho màn hình nhỏ (điện thoại) */
+/* Responsive cho màn hình nhỏ */
 @media (max-width: 768px) {
    .main-nav {
     position: static !important;
   }
 
 
-/* NAVIGATION: xếp dọc thay vì ngang */
+/* NAVIGATION: dọc thay vì ngang */
   nav {
     flex-direction: column;
     align-items: flex-start;
@@ -131,7 +131,7 @@ body {
 
   .dropdown-content a {
     padding: 10px;
-    color: #6b0033; /* đổi về màu dễ nhìn trên nền trắng */
+    color: #6b0033;
     border-top: 1px solid #fce4ec;
   }
 
@@ -140,7 +140,7 @@ body {
   }
 
   .dropdown-content.show {
-    display: flex; /* nếu bạn có JS, có thể dùng toggle class show */
+    display: flex;
   }
 
   /* Đảm bảo header không bị tràn */
@@ -180,7 +180,7 @@ body {
   
   input[type="text"],
   input[type="email"],
-  input[type="password"],  /* ✅ THÊM dòng này vào */
+  input[type="password"], 
     textarea {
   width: 100%;
   padding: 10px;
@@ -241,7 +241,7 @@ body {
   }
 
   .register-container {
-    padding: 0 15px; /* thêm khoảng cách 2 bên cho form */
+    padding: 0 15px; /* khoảng cách 2 bên cho form */
   }
 
   .login-link {
@@ -250,7 +250,7 @@ body {
   }
 
   button {
-    width: 100%; /* nút rộng toàn bộ */
+    width: 100%;
     padding: 12px 0;
     font-size: 16px;
   }
@@ -263,13 +263,13 @@ body {
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #fff5f7; /* Hồng pastel rất nhạt */
+  background-color: #fff5f7;
   color: #333;
 }
 
 /* Thanh trên cùng */
 .top-bar {
-  background-color: #f8eaee; /* Hồng pastel nền thanh trên */
+  background-color: #f8eaee;
   color: #5c0033;
   display: flex;
   justify-content: space-between;
@@ -297,10 +297,10 @@ body {
   background-color: #fddde6;
 }
 .logo-img {
-  height: 52px;   /* nhỏ hơn 40px như trước */
-  width: auto;    /* giữ đúng tỷ lệ ảnh */
+  height: 52px;   
+  width: auto;    
   margin-right: 16px;
-  object-fit: contain;  /* đảm bảo ảnh không bị méo */
+  object-fit: contain;  /* ảnh không bị méo */
   
 }
 
@@ -483,9 +483,9 @@ footer {
   max-width: 800px;
   width: 100%;
   box-sizing: border-box;
-  line-height: 1.8; /* Giãn dòng cho dễ đọc */
-  font-size: 16px; /* Kích thước chữ hợp lý hơn */
-  color: #333; /* Màu chữ dễ nhìn */
+  line-height: 1.8; 
+  font-size: 16px; 
+  color: #333;
 }
 
 .about-page .content h1 {
@@ -607,7 +607,7 @@ footer {
   .slide {
     height: auto;
     max-height: 200px;
-    object-fit: cover; /* vẫn giữ ảnh căn đều */
+    object-fit: cover; /* giữ ảnh căn đều */
   }
 }
 
@@ -714,7 +714,7 @@ footer {
   }
 
   .product-actions button {
-    width: 100%; /* full chiều ngang card */
+    width: 100%;
     font-size: 13px;
   }
 }
@@ -800,14 +800,14 @@ footer {
   font-size: 16px;
 }
 .news-page-container {
-  max-width: 1200px; /* Chiều rộng tối đa của nội dung */
+  max-width: 1200px; 
   margin: 40px auto; /* Căn giữa và tạo khoảng cách trên dưới */
   padding: 20px;
 }
 
 .page-title {
   text-align: center;
-  font-size: 2.5em; /* Kích thước chữ lớn */
+  font-size: 2.5em; 
   color: #d63385;
   margin-bottom: 40px;
   letter-spacing: 2px; /* Khoảng cách giữa các chữ */
@@ -890,7 +890,7 @@ footer {
   background-color: #fff;
   border-radius: 10px;
   overflow: hidden; /* Đảm bảo hình ảnh tròn góc theo card */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Tạo đổ bóng nhẹ */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
   display: flex;
   flex-direction: column; /* Xếp ảnh và nội dung theo chiều dọc */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng hover */
@@ -898,14 +898,14 @@ footer {
 
 .news-card:hover {
   transform: translateY(-5px); /* Nhấc nhẹ lên khi hover */
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Đổ bóng đậm hơn khi hover */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Đổ bóng đậm hơn*/
 }
 
 .news-image-wrapper {
   position: relative; /* Quan trọng để định vị date-tag */
   width: 100%;
   padding-top: 60%; /* Tỷ lệ khung hình 5:3 (Height / Width * 100) cho hình ảnh */
-  overflow: hidden; /* Đảm bảo hình ảnh không tràn ra ngoài */
+  overflow: hidden; /* Hình ảnh không tràn ra ngoài */
 }
 
 .news-image-wrapper img {
@@ -914,7 +914,7 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Đảm bảo hình ảnh phủ đầy và không bị méo */
+  object-fit: cover; /* Hình ảnh phủ đầy và không bị méo */
   transition: transform 0.5s ease;
 }
 
@@ -924,7 +924,7 @@ footer {
 
 .date-tag {
   position: absolute;
-  background-color: #e21c3b; /* Màu nền mặc định cho date-tag */
+  background-color: #e21c3b; 
   color: #fff;
   padding: 8px 12px;
   border-radius: 5px;
@@ -948,10 +948,10 @@ footer {
 }
 
 /* Màu sắc cho date-tag (theo hình mẫu) */
-.date-tag.yellow { background-color: #ffc107; } /* Màu vàng */
-.date-tag.green { background-color: #28a745; } /* Màu xanh lá */
-.date-tag.purple { background-color: #6f42c1; } /* Màu tím */
-.date-tag.pink { background-color: #e83e8c; } /* Màu hồng */
+.date-tag.yellow { background-color: #ffc107; } 
+.date-tag.green { background-color: #28a745; } 
+.date-tag.purple { background-color: #6f42c1; }
+.date-tag.pink { background-color: #e83e8c; }
 
 
 .news-content {
@@ -971,7 +971,7 @@ footer {
 }
 
 .news-content .category .icon {
-  background-color: #e21c3b; /* Màu nền cho icon @ */
+  background-color: #e21c3b;
   color: #fff;
   border-radius: 50%;
   width: 20px;
@@ -1055,8 +1055,6 @@ footer {
       font-size: 0.9em;
   }
 }
-/* Các kiểu dáng cho .featured-news-article và các thành phần bên trong nếu bạn dùng */
-/* (Bạn có thể copy từ câu trả lời trước về cách làm trang chi tiết) */
 .featured-news-article {
     background-color: #fff5f7;
     border-radius: 10px;
@@ -1106,7 +1104,7 @@ footer {
 .article-image-wrapper {
     position: relative;
     width: 100%;
-    padding-top: 56.25%; /* Tỷ lệ 16:9. Điều chỉnh nếu ảnh của bạn có tỷ lệ khác */
+    padding-top: 56.25%; /* Tỷ lệ 16:9.*/
     overflow: hidden;
     border-radius: 8px;
     margin-bottom: 30px;
@@ -1127,9 +1125,6 @@ footer {
     font-size: 1em;
     color: #444;
 }
-
-/* Đảm bảo các date-tag và .news-grid styles vẫn có */
-/* ... (các style .date-tag, .news-grid, news-card, v.v. từ các câu trả lời trước) ... */
 
 /*Chi tiết sản phẩm*/
 .product-link {
