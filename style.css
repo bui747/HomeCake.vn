@@ -622,6 +622,30 @@ footer {
 .buy-now:hover {
   background-color: #d81b60;
 }
+
+@media (max-width: 768px) {
+  .product-card img {
+    height: 140px; /* giảm chiều cao ảnh */
+  }
+
+  .product-card h3 {
+    font-size: 16px;
+  }
+
+  .product-card p {
+    font-size: 14px;
+  }
+
+  .product-actions {
+    flex-direction: column; /* các nút xếp dọc */
+  }
+
+  .product-actions button {
+    width: 100%; /* full chiều ngang card */
+    font-size: 13px;
+  }
+}
+
 /*Phân trang*/
 .pagination {
   margin-top: 30px;
