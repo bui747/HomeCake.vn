@@ -109,7 +109,6 @@ body {
   /* NAVIGATION: xếp dạng lưới 2 cột */
 nav {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 cột bằng nhau */
   gap: 10px;
   justify-items: center; /* căn giữa từng item */
 }
