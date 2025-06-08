@@ -14,7 +14,7 @@ body {
   }
 
 /* Mặc định: hiện menu ngang cho desktop */
-nav.nav-links {
+.nav-links {
   display: flex;
   gap: 20px;
   align-items: center;
@@ -33,7 +33,7 @@ nav.nav-links {
   }
 
   /* Ẩn menu */
-  nav.nav-links {
+  .nav-links {
     display: none;
     flex-direction: column;
     background-color: #fff; /* hoặc màu khác tùy thiết kế */
@@ -47,7 +47,7 @@ nav.nav-links {
   }
 
   /* Khi menu active thì hiện ra */
-  nav.nav-links.active {
+  .nav-links.active {
     display: flex;
   }
 }
