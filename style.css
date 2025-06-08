@@ -101,7 +101,12 @@ body {
 
 /* Responsive cho màn hình nhỏ (điện thoại) */
 @media (max-width: 768px) {
- 
+   .main-nav {
+    position: static !important;
+    top: auto;
+    z-index: auto;
+  }
+
 
   /* NAVIGATION: xếp dạng lưới 2 cột */
 nav {
