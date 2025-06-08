@@ -13,76 +13,43 @@ body {
     text-align: center;
   }
 
-/* Ẩn menu nav-links trên màn hình nhỏ */
-@media screen and (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
-
-  /* Khi nav có class active thì hiện menu */
-  nav.main-nav.active .nav-links
- {
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    position: absolute;
-    top: 60px; /* chiều cao nav */
-    left: 0;
-    width: 100%;
-    padding: 10px 0;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    z-index: 1000;
-  }
-
-  .nav-links a {
-    padding: 10px 20px;
-  }
+/* Mặc định: hiện menu ngang cho desktop */
+nav.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
-/* Ẩn nút toggle mặc định */
+/* Ẩn nút menu trên desktop */
 #toggle-menu {
   display: none;
 }
 
-/* Khi ở mobile (màn hình nhỏ hơn 768px) thì hiện nút hamburger */
+/* Responsive cho thiết bị nhỏ hơn 768px */
 @media (max-width: 768px) {
+  /* Hiện nút toggle */
   #toggle-menu {
-    display: inline-block;
+    display: block;
   }
-}
 
-/* Tạo icon hamburger thủ công */
-.custom-icon {
-  display: inline-block;
-  width: 24px;
-  height: 18px;
-  position: relative;
-}
+  /* Ẩn menu */
+  nav.nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #fff; /* hoặc màu khác tùy thiết kế */
+    position: absolute;
+    top: 60px; /* điều chỉnh theo chiều cao header */
+    right: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-radius: 8px;
+  }
 
-.custom-icon::before,
-.custom-icon::after,
-.custom-icon div {
-  content: '';
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background-color: #333;
-  border-radius: 2px;
-  transition: all 0.3s ease;
-}
-
-.custom-icon::before {
-  top: 0;
-}
-
-.custom-icon::after {
-  bottom: 0;
-}
-
-.custom-icon div {
-  top: 50%;
-  transform: translateY(-50%);
+  /* Khi menu active thì hiện ra */
+  nav.nav-links.active {
+    display: flex;
+  }
 }
 
   .main-nav {
