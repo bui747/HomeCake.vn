@@ -103,8 +103,6 @@ body {
 @media (max-width: 768px) {
    .main-nav {
     position: static !important;
-    top: auto;
-    z-index: auto;
   }
 
 
