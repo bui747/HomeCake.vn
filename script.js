@@ -140,28 +140,30 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener('DOMContentLoaded', function() {
   const nav = document.querySelector('nav.nav-links');
 
-  // Tạo nút hamburger
+  // Tạo nút hamburger dùng Bootstrap Icons
   const toggleBtn = document.createElement('button');
-toggleBtn.id = 'toggle-menu';
-toggleBtn.innerHTML = `
-  <span class="custom-icon">
-    <div></div>
-  </span>
-`;
-toggleBtn.style.background = 'none';
-toggleBtn.style.border = 'none';
-toggleBtn.style.cursor = 'pointer';
-toggleBtn.style.padding = '0 10px';
+  toggleBtn.id = 'toggle-menu';
+  toggleBtn.innerHTML = `<i class="bi bi-list" id="menu-icon"></i>`;
+  toggleBtn.style.background = 'none';
+  toggleBtn.style.border = 'none';
+  toggleBtn.style.cursor = 'pointer';
+  toggleBtn.style.fontSize = '24px'; // chỉnh kích thước icon nếu cần
+  toggleBtn.style.marginRight = '10px';
 
-  // Chèn nút vào nav
-  nav.insertBefore(toggleBtn, nav.firstChild);
+  // Chèn nút vào trước nav-links
+  nav.parentNode.insertBefore(toggleBtn, nav);
 
-  // Bật/tắt class active để ẩn/hiện menu
+  // Toggle menu và đổi icon
   toggleBtn.addEventListener('click', function() {
     nav.classList.toggle('active');
+    const icon = document.getElementById('menu-icon');
+    if (nav.classList.contains('active')) {
+      icon.className = 'bi bi-x'; // đổi thành dấu X
+    } else {
+      icon.className = 'bi bi-list'; // trở về icon menu
+    }
   });
 });
-
 
 
 
