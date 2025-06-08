@@ -826,6 +826,57 @@ footer {
   background-color: #e21c3b; /* Màu đỏ cho đường kẻ dưới tiêu đề */
   border-radius: 2px;
 }
+@media (max-width: 768px) {
+  .news-page-container {
+    padding: 15px;
+    margin: 30px auto;
+  }
+
+  .page-title {
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+
+  .tips-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+  }
+
+  .tip-item img {
+    height: 120px;
+  }
+
+  .tip-item span {
+    font-size: 15px;
+    padding: 10px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 1.6em;
+    padding-bottom: 8px;
+  }
+
+  .page-title::after {
+    width: 40px;
+    height: 3px;
+  }
+
+  .tips-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .tip-item img {
+    height: 110px;
+  }
+
+  .tip-item span {
+    font-size: 14px;
+  }
+}
+
 
 /* --- Lưới tin tức (News Grid) --- */
 .news-grid {
