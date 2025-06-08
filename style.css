@@ -102,9 +102,6 @@ body {
 /* Responsive cho màn hình nhỏ (điện thoại) */
 @media (max-width: 768px) {
  
-  .top-bar > div:first-child {
-    align-items: flex-start;
-  }
 
   /* NAVIGATION: xếp dọc thay vì ngang */
   nav {
