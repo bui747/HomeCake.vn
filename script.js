@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Ẩn hiện menu
 document.addEventListener('DOMContentLoaded', function() {
-  const nav = document.querySelector('nav.nav-links');
+  const nav = document.querySelector('.nav-links');
 
   // Tạo nút hamburger dùng Bootstrap Icons
   const toggleBtn = document.createElement('button');
