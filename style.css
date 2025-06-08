@@ -117,31 +117,15 @@ body {
     flex: 1 1 100%;
     justify-content: center;
     gap: 10px;
-    font-size: 14px;
+    font-size: 12px;
     flex-wrap: wrap;
   }
-
-  .dropdown-content {
-    position: static;
-    box-shadow: none;
-    background-color: #fff0f5;
-    border-radius: 0;
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: none;
-  }
-
-  .dropdown:focus-within .dropdown-content {
-    display: flex;
-    flex-direction: column;
-  }
-
   .nav-right {
     flex: 1 1 100%;
     display: flex;
     justify-content: center;
     margin-top: 10px;
+    font-size: 12px;
   }
 
   .nav-right button#cart-icon {
