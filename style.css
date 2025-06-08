@@ -1136,6 +1136,65 @@ footer {
   border-radius: 5px;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  .product-detail {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .product-detail .left img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .product-detail .right {
+    padding-top: 20px;
+  }
+
+  .product-detail .right h1 {
+    font-size: 22px;
+  }
+
+  .product-detail .right .price {
+    font-size: 18px;
+  }
+
+  .product-detail .right .description {
+    font-size: 15px;
+  }
+
+  .product-detail .buttons button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-detail-section {
+    padding: 15px;
+  }
+
+  .product-detail .right h1 {
+    font-size: 20px;
+  }
+
+  .product-detail .right .price {
+    font-size: 17px;
+  }
+
+  .product-detail .right .description {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .product-detail .buttons button {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
 /*Tăng giảm Số lượng*/
 .quantity-selector {
   display: inline-flex;
@@ -1238,6 +1297,66 @@ footer {
 .quantity-btn:hover {
   background-color: #a70202;
 }
+
+@media (max-width: 768px) {
+  .item-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 15px;
+  }
+
+  .item-row img {
+    width: 100%;
+    max-width: 250px;
+    margin-left: 0;
+    align-self: center;
+  }
+
+  .item-info {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .delete-btn {
+    top: 5px;
+    right: 5px;
+    font-size: 14px;
+  }
+
+  .quantity-btn {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  #cart-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .item-row {
+    padding: 12px;
+  }
+
+  .item-row img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .item-info {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .quantity-btn {
+    font-size: 13px;
+    padding: 5px 8px;
+  }
+}
+
 /*Tổng tiền và nút thanh toán*/
 .tongtien {
   text-align: right;
@@ -1261,6 +1380,33 @@ footer {
 
 #checkout-btn:hover {
   background-color:#a70202;
+}
+@media (max-width: 768px) {
+  .tongtien {
+    text-align: center;
+    font-size: 16px;
+    padding: 12px 15px;
+  }
+
+  #checkout-btn {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    margin: 15px auto 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .tongtien {
+    font-size: 15px;
+    padding: 10px 10px;
+  }
+
+  #checkout-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
 }
 
 /*contact.html*/
@@ -1347,6 +1493,41 @@ footer {
   padding: 20px; 
   background-color: #f9f9f9; 
   border-radius: 8px;
+}
+@media (max-width: 992px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+
+  .contact-info,
+  .contact-form,
+  .contact-map {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-info,
+  .contact-form,
+  .contact-map {
+    padding: 15px;
+  }
+
+  .contact-form, .contact-info h3 {
+    font-size: 18px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+
+  .contact-form button[type="submit"] {
+    font-size: 15px;
+    padding: 10px;
+  }
 }
 
 
