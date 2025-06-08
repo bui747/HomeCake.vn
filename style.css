@@ -99,6 +99,58 @@ body {
   display: block;
 } 
 
+/* Responsive cho màn hình nhỏ (điện thoại) */
+@media screen and (max-width: 768px) {
+  .main-nav {
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  .nav-left {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .nav-links {
+    flex: 1 1 100%;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+    flex-wrap: wrap;
+  }
+
+  .dropdown-content {
+    position: static;
+    box-shadow: none;
+    background-color: #fff0f5;
+    border-radius: 0;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: none;
+  }
+
+  .dropdown:focus-within .dropdown-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-right {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .nav-right button#cart-icon {
+    width: 100%;
+    justify-content: center;
+    padding: 10px 0;
+  }
+}
+
   /* form liên hệ */
   form {
     margin-top: 20px;
