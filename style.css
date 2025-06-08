@@ -233,7 +233,33 @@ body {
   display: block;
   margin: 0 auto;
 }
-  
+@media (max-width: 768px) {
+  .register-title {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .register-container {
+    padding: 0 15px; /* thêm khoảng cách 2 bên cho form */
+  }
+
+  .login-link {
+    font-size: 13px;
+    padding: 0 10px;
+  }
+
+  button {
+    width: 100%; /* nút rộng toàn bộ */
+    padding: 12px 0;
+    font-size: 16px;
+  }
+
+  .btn-submit {
+    margin-top: 10px;
+  }
+}
+
 
 body {
   font-family: 'Segoe UI', sans-serif;
